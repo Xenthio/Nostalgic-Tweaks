@@ -21,6 +21,9 @@ public abstract class LivingEntityMixin
     )
     private boolean nt_mechanics_player$modifySprintingFlag(boolean sprinting)
     {
+        if (!ModTweak.ENABLED.get())
+            return sprinting;
+
         boolean canSprint = !GameplayTweak.DISABLE_SPRINT.get();
         boolean canSwim = !GameplayTweak.DISABLE_SWIM.get();
 
