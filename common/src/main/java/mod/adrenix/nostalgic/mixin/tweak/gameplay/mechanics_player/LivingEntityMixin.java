@@ -2,6 +2,7 @@ package mod.adrenix.nostalgic.mixin.tweak.gameplay.mechanics_player;
 
 import mod.adrenix.nostalgic.NostalgicTweaks;
 import mod.adrenix.nostalgic.tweak.config.GameplayTweak;
+import mod.adrenix.nostalgic.tweak.config.ModTweak;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import org.spongepowered.asm.mixin.Mixin;
