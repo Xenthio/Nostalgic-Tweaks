@@ -178,7 +178,13 @@ public interface CandyTweak
     TweakFlag DISABLE_EMPTY_ARMOR_TEXTURE = TweakFlag.client(false, CandyGroup.INTERFACE_INVENTORY).build();
     TweakFlag DISABLE_EMPTY_SHIELD_TEXTURE = TweakFlag.client(false, CandyGroup.INTERFACE_INVENTORY).build();
     TweakFlag INVERTED_PLAYER_LIGHTING = TweakFlag.client(true, CandyGroup.INTERFACE_INVENTORY).build();
-    TweakEnum<Hotbar> OLD_CREATIVE_HOTBAR = TweakEnum.server(Hotbar.CLASSIC, CandyGroup.INTERFACE_INVENTORY).ignoreNetworkCheck().whenDisabled(Hotbar.MODERN).build();
+
+    // Creative Inventory Screen
+
+    TweakEnum<Hotbar> OLD_CREATIVE_HOTBAR = TweakEnum.server(Hotbar.CLASSIC, CandyGroup.INTERFACE_INVENTORY_CREATIVE).ignoreNetworkCheck().whenDisabled(Hotbar.MODERN).build();
+    TweakEnum<OldCreativeInventory> OLD_CREATIVE_INVENTORY = TweakEnum.client(OldCreativeInventory.MODERN, CandyGroup.INTERFACE_INVENTORY_CREATIVE).build();
+    TweakText OLD_CREATIVE_INVENTORY_VERSION = TweakText.client("r1.2.5", CandyGroup.INTERFACE_INVENTORY_CREATIVE).build();
+    TweakFlag OLD_CREATIVE_INVENTORY_ALWAYS_SHOW_MODERN_ITEMS = TweakFlag.client(true, CandyGroup.INTERFACE_INVENTORY_CREATIVE).build();
 
     // Generic Screen
 
@@ -339,6 +345,7 @@ public interface CandyTweak
     TweakFlag OLD_SMOOTH_LIGHTING = TweakFlag.client(true, CandyGroup.LIGHTING_WORLD_ENGINE).reloadChunks().build();
     TweakFlag OLD_NETHER_LIGHTING = TweakFlag.client(true, CandyGroup.LIGHTING_WORLD_ENGINE).reloadChunks().build();
     TweakFlag OLD_CLASSIC_ENGINE = TweakFlag.server(false, CandyGroup.LIGHTING_WORLD_ENGINE).reloadChunks().warningTag().build();
+    TweakFlag DISABLE_SMOOTH_LIGHTING = TweakFlag.client(false, CandyGroup.LIGHTING_WORLD_ENGINE).newForUpdate().reloadChunks().build();
 
     // Lightmap Texture
 
