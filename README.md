@@ -1,3 +1,6 @@
+# Nostalgic Tweaks X
+My personal fork of Nostalgic Tweaks with more features and other things.
+
 # Mod Relicense
 As of August 15th, 2024, Nostalgic Tweaks is now under the LGPLv3 license. I can no longer provide continuous updates to the mod and I will be stepping away from development. All versions starting at `v2.0.0-beta.905` and later will use this license. Any mod developer(s) that would like to continue my work on this project may fork it and distribute their changes under a new mod name.
 
